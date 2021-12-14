@@ -4,13 +4,23 @@ mixin pokemonCard(pokemon)
         div.card-header
             div.card-title= pokemon.title
             div.card-HP=pokemon.HP
+            img.card-energy(src='https://archives.bulbagarden.net/media/upload/thumb/0/04/Lightning-attack.png/20px-Lightning-attack.png')
         div.character
             img.character-image(src=pokemon.img)
         div.card-body
             div.card-info
                 div.power1=pokemon.powerOne
+                    div.energy1=pokemon.energyOne
                 div.power2=pokemon.powerTwo
+                    div.energy2=pokemon.energyTwo
                 div.otherInfo
-                    div.strength Strength
-                    div.resistance Resistance
-                    div.retreat Retreat Cost
+                    div.strength-row
+                        div.strength Strength
+                        img.energy-cost(src='https://archives.bulbagarden.net/media/upload/thumb/0/04/Lightning-attack.png/20px-Lightning-attack.png')
+                    div.resistance-row
+                        div.resistance Resistance
+                        img.energy-cost(src='https://archives.bulbagarden.net/media/upload/thumb/0/04/Lightning-attack.png/20px-Lightning-attack.png')
+                    div.retreat-row
+                        div.retreat Retreat Cost
+                        img.energy-cost(src='https://archives.bulbagarden.net/media/upload/thumb/0/04/Lightning-attack.png/20px-Lightning-attack.png')
+                        img.energy-cost(src='https://archives.bulbagarden.net/media/upload/thumb/0/04/Lightning-attack.png/20px-Lightning-attack.png')

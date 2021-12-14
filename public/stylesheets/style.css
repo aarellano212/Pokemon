@@ -3,11 +3,13 @@ body {
   margin: 0;
   background: white;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .container {
   padding: 48px;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -20,15 +22,14 @@ body {
 }
 
 .card-info {
-  text-weight:bold;
   font-size: 18px;
   text-align: center;
+  padding: 10px;
 }
 
 .character-image {
-  border: solid yellow;
+  border: 3px solid yellow;
   background-color: #F6F6F6;
-  width: 250px;
   height: 195px;
   width: 80%;
 }
@@ -41,22 +42,46 @@ body {
   font-size: 20px;
   padding: 10px;
   font-weight: bold;
+  justify-content: space-between;
+  display: flex;
 }
 
 .card-HP {
+  justify-content: space-between;
+  display: flex;
+  padding: 8px;
   color: red;
 }
 .card-header {
+  justify-content: space-between;
   display: flex;
+  padding: 8px;
 }
 
 .otherInfo {
   display: flex;
   text-align: center;
+  justify-content: space-between;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 14px;
 }
 
-.card-type {
-  width: 50px;
-  height: 50px;
-  text-align: right;
+.power1{
+  border-bottom: 2px solid black;
+  padding: 8px;
+}
+
+.power2 {
+  border-bottom: 2px solid black;
+  padding: 8px;
+}
+
+.card-energy {
+  height: 30px;
+  width: 30px;
+}
+
+.strength-row, .retreat-row, .resistance-row{
+  text-align: left;
 }
